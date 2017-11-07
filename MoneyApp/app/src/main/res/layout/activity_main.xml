@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:gravity="center_horizontal"
+    tools:context="com.example.moneyapp.MainActivity">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Calculator" />
+
+    <Button
+        android:id="@+id/buttonResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        android:onClick="onClickButtonResult"/>
+
+
+    <Button
+        android:id="@+id/buttonPlus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResult"
+        android:onClick="onClickButtonPlus"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buttonMinus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Minus"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResult"
+        tools:layout_editor_absoluteX="99dp"
+        android:layout_marginTop="10dp"
+        android:onClick="onClickButtonMinus"/>
+
+    <Button
+        android:id="@+id/buttonMul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mul"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResult"
+        android:onClick="onClickButtonMul"
+        tools:layout_editor_absoluteX="200dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buttonDiv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Div"
+        app:layout_constraintTop_toBottomOf="@+id/buttonResult"
+        android:onClick="onClickButtonDiv"
+        tools:layout_editor_absoluteX="295dp"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/buttonOperand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Operand (number)"
+        app:layout_constraintTop_toBottomOf="@+id/buttonPlus"
+        android:onClick="onClickButtonOperand"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonMoneyConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Money Converter"
+        app:layout_constraintTop_toBottomOf="@+id/buttonOperand"
+        android:onClick="onClickButtonMoneyConverter"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="8dp" />
+
+    <Button
+        android:id="@+id/buttonMeasurementConverter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Measurement Converter"
+        app:layout_constraintTop_toBottomOf="@+id/buttonMoneyConverter"
+        android:onClick="onClickButtonMeasurementConverter"
+        tools:layout_editor_absoluteX="0dp"
+        android:layout_marginTop="8dp" />
+
+</android.support.constraint.ConstraintLayout>

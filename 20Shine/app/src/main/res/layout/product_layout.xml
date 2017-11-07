@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F5"
+    android:orientation="vertical"
+    android:weightSum="100">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/style1"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="50"
+            android:src="@drawable/shampoo1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="Cupcake"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/style2"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="50"
+            android:src="@drawable/shampoo2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="Donut"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/style3"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="50"
+            android:src="@drawable/shampoo3" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="Gingerbread"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="100">
+
+        <ImageView
+            android:id="@+id/style4"
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            android:layout_weight="50"
+            android:src="@drawable/shampoo4" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="Jelly Bean"
+            android:textColor="@android:color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>
