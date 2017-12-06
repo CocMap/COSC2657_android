@@ -7,123 +7,74 @@
     android:orientation="vertical"
     android:weightSum="100">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
+        android:layout_height="50dp"
+        android:textColor="#FF3333"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:text="Choose your favourite Hairstyle!"
+        android:textSize="20dp"
+        android:textAlignment="center" />
 
-        <ImageView
-            android:id="@+id/style1"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/style1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Cupcake"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <ImageView
-            android:id="@+id/style2"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/style2" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="50dp"
+                android:orientation="vertical">
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Donut"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            <ImageButton
+                android:id="@+id/hairstyle1"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/title"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/style1" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
+                <ImageButton
+                    android:id="@+id/hairstyle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/style1"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/style2" />
 
-        <ImageView
-            android:id="@+id/style3"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/style3" />
+                <ImageButton
+                    android:id="@+id/hairstyle3"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/style2"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/style3" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Gingerbread"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+                <ImageButton
+                    android:id="@+id/hairstyle4"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/style3"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/style4" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
+                <ImageButton
+                    android:id="@+id/hairstyle5"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/style4"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/style5" />
 
-        <ImageView
-            android:id="@+id/style4"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/style4" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Jelly Bean"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
-
-        <ImageView
-            android:id="@+id/style5"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/style5" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Jelly Bean"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            </LinearLayout>
+    </ScrollView>
 </LinearLayout>

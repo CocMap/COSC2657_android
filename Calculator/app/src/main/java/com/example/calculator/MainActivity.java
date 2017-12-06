@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClickButtonPlus(View view) {
         //get handle on the number (operand whose id="number")
-        EditText editText = (EditText) findViewById(R.id.number);
+        EditText editText = (EditText) findViewById(R.id.name);
 
         //get the number's string and convert it to a float object
         operand = parseFloat(editText.getText().toString());

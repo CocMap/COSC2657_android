@@ -7,99 +7,65 @@
     android:orientation="vertical"
     android:weightSum="100">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
+        android:layout_height="50dp"
+        android:textColor="#FF3333"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:text="Shopping me!"
+        android:textSize="20dp"
+        android:textAlignment="center" />
 
-        <ImageView
-            android:id="@+id/style1"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/shampoo1" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Cupcake"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
-
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
 
-        <ImageView
-            android:id="@+id/style2"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/shampoo2" />
-
-        <TextView
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Donut"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:layout_height="match_parent"
+            android:layout_marginRight="100dp"
+            android:layout_marginLeft="100dp"
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
+            <ImageButton
+                android:id="@+id/product1"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/title"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/shampoo1" />
 
-        <ImageView
-            android:id="@+id/style3"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/shampoo3" />
+            <ImageButton
+                android:id="@+id/product2"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/product1"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/shampoo2" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Gingerbread"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+            <ImageButton
+                android:id="@+id/product3"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/product2"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/shampoo3" />
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="100">
+            <ImageButton
+                android:id="@+id/product4"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/product3"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/shampoo4" />
 
-        <ImageView
-            android:id="@+id/style4"
-            android:layout_width="wrap_content"
-            android:layout_height="100dp"
-            android:layout_weight="50"
-            android:src="@drawable/shampoo4" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_weight="50"
-            android:gravity="center"
-            android:text="Jelly Bean"
-            android:textColor="@android:color/black"
-            android:textSize="20dp"
-            android:textStyle="bold" />
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

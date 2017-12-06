@@ -1,57 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:weightSum="100">
-
-    <ListView
-        android:id="@+id/menu_list"
-        android:layout_width="250dp"
-        android:layout_height="match_parent"
-        android:background="#FFF0F5" />
+    android:orientation="vertical"
+    android:weightSum="100"
+    android:background="#FFCC99">
 
     <TextView
-        android:id="@+id/hair_style"
-        android:layout_width="250dp"
-        android:layout_height="60dp"
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="#FF3333"
+        android:textStyle="italic"
         android:gravity="center"
+        android:text="Main Menu"
+
+        android:textSize="40dp"
         android:textAlignment="center" />
 
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignBaseline="@+id/hair_style"
-        android:layout_alignBottom="@+id/hair_style"
-        android:layout_alignParentEnd="true"
-        android:layout_marginEnd="20dp"
-        android:text="Click"
-        android:textSize="10dp" />
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:fillViewport="true">
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button1"
-        android:layout_below="@+id/button1"
-        android:text="Click"
-        android:textSize="10dp" />
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
 
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button2"
-        android:layout_below="@+id/button2"
-        android:text="Click"
-        android:textSize="10dp" />
+            <!--hairstyle-->
+            <TextView
+                android:id="@+id/hairstyle"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginRight="30dp"
+                android:text="Hair Style"
+                android:textSize="15dp"
+                android:textAlignment="viewEnd" />
 
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/button3"
-        android:layout_below="@+id/button3"
-        android:text="Click"
-        android:textSize="10dp" />
-</RelativeLayout>
+            <ImageButton
+                android:id="@+id/hairstyleButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/hair_style"
+                android:scaleType="fitXY"
+                android:src="@drawable/background1"/>
+
+            <!--appointment-->
+            <TextView
+                android:id="@+id/appointment"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginRight="30dp"
+                android:text="Book an Appointmnent"
+                android:layout_below="@+id/imageButton"
+                android:textSize="15dp"
+                android:textAlignment="viewEnd" />
+
+            <ImageButton
+                android:id="@+id/appointmentButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/appointment"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/schedule" />
+
+            <!--shopping-->
+            <TextView
+                android:id="@+id/shopping"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/appointmentButton"
+                android:text="Shopping"
+                android:textSize="15dp"
+                android:textAlignment="viewEnd" />
+
+            <ImageButton
+                android:id="@+id/shoppingButton"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_below="@+id/shopping"
+                android:scaleType="fitXY"
+                app:srcCompat="@drawable/shopping" />
+
+           <!--branch-->
+           <TextView
+               android:id="@+id/branch"
+               android:layout_width="match_parent"
+               android:layout_height="20dp"
+               android:layout_marginRight="30dp"
+               android:layout_below="@+id/shoppingButton"
+               android:text="20Shine! branches"
+               android:textSize="15dp"
+               android:textAlignment="viewEnd" />
+
+           <ImageButton
+               android:id="@+id/branchButton"
+               android:layout_width="match_parent"
+               android:layout_height="150dp"
+               android:layout_below="@+id/branch"
+               android:scaleType="fitXY"
+               app:srcCompat="@drawable/location" />
+
+       </LinearLayout>
+   </ScrollView>
+</LinearLayout>

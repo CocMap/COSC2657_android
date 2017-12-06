@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "576969541624",
+    "firebase_url": "https://twentyshineandroid.firebaseio.com",
+    "project_id": "twentyshineandroid",
+    "storage_bucket": "twentyshineandroid.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576969541624:android:a75121379a2d77f3",
+        "android_client_info": {
+          "package_name": "com.example.twenty_shine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "576969541624-2f1umtkbh8hpd0c4kuhjlocc2jbqd1md.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.twenty_shine",
+            "certificate_hash": "8d89fbd162712123afa925fabb71d2fcd3e80598"
+          }
+        },
+        {
+          "client_id": "576969541624-oobq30qjqk6psgrhsqd5inol0blheeir.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC51VxGkmBH01dsYNhE8dFEp8l4VN4egFU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "576969541624-oobq30qjqk6psgrhsqd5inol0blheeir.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

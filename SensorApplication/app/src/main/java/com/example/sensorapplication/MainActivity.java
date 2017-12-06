@@ -52,5 +52,4 @@ public class MainActivity extends Activity implements SensorEventListener {
         super.onPause();
         mSensorManager.unregisterListener(this);
     }
-
 }
